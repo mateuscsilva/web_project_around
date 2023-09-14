@@ -1,0 +1,30 @@
+.popup__container-delete{
+  height: 15vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .popup__container-delete {
+    height: 20vw;
+  } 
+ } 
+
+ @media screen and (max-width: 800px) {
+  .popup__container-delete {
+    width: 40vw;
+    height: 20vw;
+  }
+}
+  
+  @media screen and (max-width: 768px) {
+    .popup__container-delete {
+      width: 88vw;
+      height: 30vw;
+    } 
+ }
+ 
+ @media screen and (max-width: 600px) {
+  .popup__container-delete {
+    width: 88vw;
+    height: 40vw;
+  } 
+} 

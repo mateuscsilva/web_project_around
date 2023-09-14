@@ -1,0 +1,16 @@
+.popup {
+  display: none;
+  position: absolute;
+  top: 195px;
+  left: calc((100vw - 33vw)/2);
+  width: 36vw;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    top: 123px;
+    left: 19px;
+    width: 88vw;
+  }
+}

@@ -1,0 +1,39 @@
+.cards__delete-button {
+  position: relative;
+  align-self: flex-end;
+  top: 40px;
+  right: 15px;
+  width: 2vw;
+  height: 2vw;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.cards__delete-button:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px) {
+  .cards__delete-button {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .cards__delete-button {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards__delete-button {
+    top: 60px;
+    width: 8vw;
+    height: 8vw;
+  }
+}

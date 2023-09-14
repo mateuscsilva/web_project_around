@@ -1,0 +1,25 @@
+.cards__like-button{
+  align-self: center;
+  width: 2vw;
+  height: 2vw;
+  background-image: url('../../../images/like.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  border: none;
+}
+
+.cards__like-button:hover{
+  opacity: 0.5;
+}
+
+.cards__like-button-clicked {
+  background-image: url('../../../images/like_clicked.svg ');
+}
+
+@media screen and (max-width: 768px) {
+  .cards__like-button {
+    width: 7vw;
+    height: 7vw;
+  }
+}

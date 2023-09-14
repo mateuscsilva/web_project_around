@@ -1,0 +1,24 @@
+.profile__edit-button {
+  background-color: inherit;
+  background-image: url('../../../images/edit_button.png');
+  width: 2.3vw;
+  height: 2.3vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  margin-left: 1.5vw;
+  border: none;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+ .profile__edit-button {
+  width: 6vw;
+  height: 6vw;
+  margin-left: 2vw;
+ } 
+}

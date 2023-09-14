@@ -1,0 +1,10 @@
+@keyframes smooth {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.popup__opened {
+  display: flex;
+  flex-direction: column;
+  animation: smooth 1s ease-in;
+}

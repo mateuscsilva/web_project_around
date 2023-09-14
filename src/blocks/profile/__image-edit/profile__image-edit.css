@@ -1,0 +1,23 @@
+.profile__image-edit{
+  border-radius: 50%;
+  width: 13vw;
+  height: 13vw;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.profile__image-edit:hover{
+  background-image: url('../../../images/edit_icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+ .profile__image-edit {
+  max-width: 40vw;
+  max-height: 40vw;
+  margin-bottom: 26px;
+ } 
+}

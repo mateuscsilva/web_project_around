@@ -1,0 +1,15 @@
+.popup__close-icon {
+  width: 3.125vw;
+  height: 3.125vw;
+}
+
+.popup__close-icon:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__close-icon {
+    width: 8vw;
+    height: 8vw;
+  }
+}

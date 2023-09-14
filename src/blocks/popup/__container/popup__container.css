@@ -1,0 +1,35 @@
+.popup__container {
+  background-color: white;
+  width: 33vw;
+  height: 35vw;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .popup__container {
+    width: 33vw;
+    height: 35vw;
+  } 
+ } 
+
+@media screen and (max-width: 900px) {
+  .popup__container {
+    width: 33vw;
+    height: 40vw;
+  } 
+ } 
+
+@media screen and (max-width: 768px) {
+ .popup__container {
+  width: 88vw;
+  height: 80vw;
+ } 
+}
+
+@media screen and (max-width: 500px) {
+  .popup__container {
+   width: 88vw;
+   height: 80vw;
+  } 
+ }

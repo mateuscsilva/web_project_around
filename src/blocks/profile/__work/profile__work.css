@@ -1,0 +1,16 @@
+.profile__work {
+  margin-top: 0;
+  font-family: InterRegular400, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__work {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+}

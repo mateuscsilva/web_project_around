@@ -1,0 +1,16 @@
+.cards__picture-button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 75%;
+  max-height: 75%;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cards__picture-button {
+    max-height: 75%;
+    height: 75%;
+  }
+}

@@ -1,0 +1,17 @@
+.popup__submit-button{
+  width: 100%;
+  height: 3vw;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.popup__submit-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__submit-button {
+    height: 13vw;
+  }
+}
