@@ -1,4 +1,3 @@
-import Api from "./Api";
 import PopupWithForm from "./PopupWithForm";
 import PopupWithImage from "./PopupWithImage";
 
@@ -49,7 +48,7 @@ class Card {
   _clickDeleteButton(evt){
     const self = this;
     const deleteForm = new PopupWithForm({
-      formSelector: '.popup-delete_card',
+      formSelector: '.popup-delete',
       handleFormSubmit: (formData) => {
         console.log(this);
         self._api.deletePicture(this._id)
