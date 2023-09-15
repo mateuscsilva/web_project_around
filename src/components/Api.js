@@ -51,10 +51,7 @@ export default class Api {
       method: "PUT",
       headers: this._headers
     }).then(res => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this.checkReturn(res);
     }).catch((err) => console.log(`${err}`));
   }
 
@@ -63,10 +60,7 @@ export default class Api {
       method: "DELETE",
       headers: this._headers
     }).then(res => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this.checkReturn(res);
     }).catch((err) => console.log(`${err}`));
   }
 
@@ -79,10 +73,7 @@ export default class Api {
         link: data.link
       })
     }).then(res => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this.checkReturn(res);
     }).catch((err) => console.log(`${err}`));
   }
 
@@ -94,10 +85,7 @@ export default class Api {
         avatar: avatar.link
       })
     }).then(res => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this.checkReturn(res);
     }).catch((err) => console.log(`${err}`));
   }
 
@@ -106,10 +94,14 @@ export default class Api {
       method: "DELETE",
       headers: this._headers
     }).then(res => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this.checkReturn(res);
     }).catch((err) => console.log(`${err}`));
+  }
+
+  checkReturn(res){
+    if (res.ok) {
+      return res.json();
+    }
+    return Promise.reject(`Error: ${res.status}`);
   }
 }

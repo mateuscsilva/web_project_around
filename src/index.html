@@ -27,14 +27,6 @@
         <button class="profile__add-button"></button>
       </section>
 
-      <section class="popup popup-image">
-        <button class="popup__close-button popup__close-image-button">
-          <img class="popup__close-icon" src="<%=require('./images/close_icon.svg')%>" alt="Butão para fechar">
-        </button>
-        <img class="popup__display-image" src="https://code.s3.yandex.net/web-code/lago.jpg" alt="Imagem do Lago di Braies">
-        <h3 class="popup__text"></h3>
-      </section>
-
       <section class="cards">
         
         <template id="cards__template">
@@ -62,6 +54,14 @@
     <footer class="footer">
       <h3 class="footer__text">&copy; 2023 Around The U.S.</h3>
     </footer>
+  </div>
+
+  <div class="popup popup-image">
+    <button class="popup__close-button popup__close-image-button">
+      <img class="popup__close-icon" src="<%=require('./images/close_icon.svg')%>" alt="Butão para fechar">
+    </button>
+    <img class="popup__display-image" src="https://code.s3.yandex.net/web-code/lago.jpg" alt="Imagem do Lago di Braies">
+    <h3 class="popup__text"></h3>
   </div>
 
   <div class="popup-avatar popup">
