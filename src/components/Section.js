@@ -14,4 +14,8 @@ export default class Section {
   addItem(element){
     this._container.insertBefore(element,  this._container.firstChild);
   }
+
+  addItemInitializePage(element){
+    this._container.append(element);
+  }
 }

@@ -33,9 +33,9 @@ export default class Popup{
 
   _closeAfterClickOutsidePopup(e){
     const isClosest = e.target.closest(this._selector);
-      if (!isClosest) {
-        this.close();
-      }
+    if (!isClosest && this._container.classList.contains('popup__opened')) {
+      this.close();
+    }
   }
 
   setEventListeners(){

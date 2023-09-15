@@ -41,7 +41,7 @@ const cardsContainer = new Section({
   renderer: (item)=>{
     const newCard = new Card(item, ".cards__item", api);
     const cardElement = newCard.generateCard(userInfo._id);
-    cardsContainer.addItem(cardElement);
+    cardsContainer.addItemInitializePage(cardElement);
   }},
   '.cards');
 cardsContainer.renderer();

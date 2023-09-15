@@ -9,10 +9,7 @@ export default class Api {
       headers: this._headers
       })
       .then(res => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(`Error: ${res.status}`);
+        return this.checkReturn(res);
       }).catch((err) => console.log(`${err}`)); 
   }
 
@@ -21,10 +18,7 @@ export default class Api {
       headers: this._headers
       })
       .then(res => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(`Error: ${res.status}`);
+        return this.checkReturn(res);
       }).catch((err) => console.log(`${err}`)); 
   }
 
